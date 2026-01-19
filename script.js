@@ -81,6 +81,28 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const frame = document.querySelector(".vintage-frame");
+
+    // Delay sedikit biar smooth
+    setTimeout(() => {
+        frame.classList.add("show");
+    }, 400);
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const frame = document.querySelector(".vintage-frame");
+
+    // delay dikit biar cinematic
+    setTimeout(() => {
+        frame.classList.add("show");
+    }, 500);
+});
+
+
+
 // =====================
 // LIGHTBOX
 // =====================
@@ -197,13 +219,72 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+    document.addEventListener("DOMContentLoaded", () => {
+        const timeline = document.querySelector("#timeline");
+        if (!timeline) return;
+
+        const line = timeline.querySelector(".timeline-line");
+        const items = timeline.querySelectorAll(".timeline-item");
+
+        // set line mulai dari love pertama
+        const firstItem = items[0];
+        const firstMarker = firstItem.querySelector(".timeline-marker");
+        const timelineRect = timeline.getBoundingClientRect();
+        const startTop = firstMarker.offsetTop; // garis mulai dari sini
+
+        line.style.top = `${startTop}px`;
+        line.style.height = `0px`;
+        line.style.opacity = 1;
+
+        // fungsi animasi step by step
+        let totalHeight = 0;
+
+        items.forEach((item, index) => {
+            setTimeout(() => {
+                const marker = item.querySelector(".timeline-marker");
+                const content = item.querySelector(".timeline-content");
+
+                // tampilkan marker dan content
+                marker.style.opacity = "1";
+                marker.style.transform = "scale(1)";
+                content.style.opacity = "1";
+                content.style.transform = "translateY(0)";
+
+                // naikkan garis sesuai item
+                const itemHeight = item.offsetHeight;
+                totalHeight += itemHeight;
+                line.style.height = `${totalHeight}px`;
+
+            }, index * 1200); // delay step by step
+        });
+    });
 
     window.addEventListener("scroll", updateTimeline);
     updateTimeline();
 });
-// =====================
-// GIFS
-// =====================
+const items = document.querySelectorAll('.timeline-item');
+const line = document.querySelector('.timeline-line');
+
+let totalHeight = 0;
+
+items.forEach((item, index) => {
+    setTimeout(() => {
+        // munculkan foto + teks
+        item.classList.add('show');
+
+        // munculkan marker ❤️
+        const marker = item.querySelector('.timeline-marker');
+        marker.classList.add('show', 'active');
+
+        // tambah height garis sesuai item
+        const contentHeight = item.offsetHeight;
+        totalHeight += contentHeight;
+        line.style.height = totalHeight + 'px';
+
+    }, index * 700); // delay tiap item
+});
+
+
 
 // =====================
 // TOGGLE INFO PENGIRIM
@@ -482,4 +563,215 @@ setInterval(() => {
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
 }, 8000);
+
+
+
+
+
+
+
+// ================== ANIMASI BINGKAI SAMBUTAN ==================
+(function () {
+    const vintageFrames = document.querySelectorAll('.vintage-frame');
+
+    if (!vintageFrames.length) return;
+    ;
+});
+// AKTIFKAN ANIMASI TEXT (AMAN)
+window.addEventListener('load', () => {
+    document.querySelectorAll('.vintage-frame').forEach(frame => {
+        frame.classList.add('show');
+    });
+});
+
+
+
+
+// ===============================
+// REVEAL TEXT & IG SAAT SCROLL
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    const revealItems = document.querySelectorAll('.reveal-text, .reveal-ig');
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    revealItems.forEach(el => observer.observe(el));
+});
+// ===============================
+// REVEAL TEXT TANPA GESER
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // stop biar stabil
+            }
+        });
+    }, { threshold: 0.2 });
+
+    reveals.forEach(el => observer.observe(el));
+});
+// ===============================
+// SCROLL REVEAL FOTO + TEKS (STABIL)
+// ===============================
+document.addEventListener('DOMContentLoaded', () => {
+    const revealEls = document.querySelectorAll('.reveal, .reveal-photo');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.25
+    });
+
+    revealEls.forEach(el => observer.observe(el));
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal-line");
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    reveals.forEach(el => observer.observe(el));
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const timelineItems = document.querySelectorAll('.timeline-content');
+    if (!timelineItems.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    timelineItems.forEach(el => observer.observe(el));
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryImages = document.querySelectorAll('.gallery-grid img');
+    if (!galleryImages.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    galleryImages.forEach(img => observer.observe(img));
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const giftElements = document.querySelectorAll(
+        '.gifts-box h2, .gifts-text, .gifts-actions'
+    );
+
+    if (!giftElements.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    giftElements.forEach(el => observer.observe(el));
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const rsvpElements = document.querySelectorAll(
+        '.RSVP h2, .wish-trigger'
+    );
+
+    if (!rsvpElements.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    rsvpElements.forEach(el => observer.observe(el));
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const closingElements = document.querySelectorAll(
+        '.photo-frame, .photo-frame + h2, .photo-frame + h2 + p, .photo-frame + h2 + p + h3'
+    );
+
+    if (!closingElements.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    closingElements.forEach(el => observer.observe(el));
+});
 

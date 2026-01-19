@@ -8,9 +8,15 @@
 
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero-premium.css">
+
+
 </head>
 
 <body>
@@ -54,12 +60,10 @@
     <main id="main-content" style="display:none;">
 
 
+
+
         <!-- HERO -->
         <section class="hero">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="bg" type="video/mp4">
-            </video>
-
             <div class="vintage-frame">
                 <div class="frame-photo">
                     <img src="beladandeni.webp" alt="Bella & Deni">
@@ -73,404 +77,407 @@
 
                 <div class="countdown-wrapper">
                     <div class="countdown">
-                        <div><span id="days">00</span><small>Hari</small></div>
-                        <div><span id="hours">00</span><small>Jam</small></div>
-                        <div><span id="minutes">00</span><small>Menit</small></div>
-                        <div><span id="seconds">00</span><small>Detik</small></div>
+                        <div class="count-box">
+                            <span id="days">00</span>
+                            <small>Hari</small>
+                        </div>
+                        <div class="count-box">
+                            <span id="hours">00</span>
+                            <small>Jam</small>
+                        </div>
+                        <div class="count-box">
+                            <span id="minutes">00</span>
+                            <small>Menit</small>
+                        </div>
+                        <div class="count-box">
+                            <span id="seconds">00</span>
+                            <small>Detik</small>
+                        </div>
                     </div>
                 </div>
+
+                <div class="calendar-btn">
+                    <a href="#">📅 Simpan ke Kalender</a>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- BINGKAI UTAMA SAMBUTAN -->
+        <section class="bingkai-sambutan">
+            <div class="container-bingkai vintage-frame">
+                <div class="sambutan-1 animate-text delay-1">
+                    <h2>
+                        <i>Assalamu'alaikum warahmatullahi wabarakatuh</i><br>
+                        Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+                        pasangan-pasangan untukmu...
+                    </h2>
+                </div>
+
+                <div class="sambutan animate-text delay-2">
+                    <p>
+                        Tanpa mengurangi rasa hormat, kami mengundang
+                        <strong>Bapak/Ibu/Saudara/i</strong>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- PENGANTIN -->
+        <section class="pengantin">
+            <div class="couple">
+
+                <div class="card">
+
+                    <span class="reveal-photo">
+                        <img src="beladandeni1.webp" alt="Bella">
+                    </span>
+
+                    <h3><span class="reveal delay-1">Bella Pratama</span></h3>
+                    <p><span class="reveal delay-2">Putra dari Bpk Ahmad & Ibu Siti</span></p>
+
+                    <div class="ig-single">
+                        <span class="reveal delay-3">
+                            <a href="https://instagram.com/bella" target="_blank">
+                                <img src="logoig2.png">
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <span class="reveal-photo">
+                        <img src="beladandeni1.webp" alt="Bella">
+                    </span>
+
+                    <h3><span class="reveal delay-1">Bella Pratama</span></h3>
+                    <p><span class="reveal delay-2">Putra dari Bpk Ahmad & Ibu Siti</span></p>
+
+                    <div class="ig-single">
+                        <span class="reveal delay-3">
+                            <a href="https://instagram.com/bella" target="_blank">
+                                <img src="logoig2.png">
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="save-invitation">
-                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Undangan+Pernikahan+Bella+%26+Deni&dates=20271231T090000/20271231T120000&details=Kami+mengundang+Anda+untuk+menghadiri+pernikahan+Bella+%26+Deni+di+Jl.+Pangkalan+2,+Cikiwul&location=Jl.+Pangkalan+2,+Cikiwul,+Kota+Bks,+Jawa+Barat&sf=true&output=xml"
-                    target="_blank">
-                    <button>
-                        📅 Simpan ke Kalender
+            </div>
+        </section>
+
+        <!-- HALAMAN BARU -->
+        <!-- HALAMAN BARU: AKAD & RESEPSI -->
+        <section class="halaman-baru">
+            <div class="container">
+
+                <!-- AKAD -->
+                <div class="event-card">
+                    <h2 class="reveal-line">Akad</h2>
+                    <p class="reveal-line">Sabtu, 12 Oktober 2024</p>
+                    <p class="reveal-line">Pukul: 09:00</p>
+                    <p class="reveal-line">Kediaman Mempelai Wanita</p>
+                    <p class="reveal-line">
+                        Jl. Pangkalan 2 No.230, RT.004/RW.002, Cikiwul, Kec. Bantar Gebang, Kota Bks, Jawa Barat 17152
+                    </p>
+                    <button class="reveal-line" onclick="window.open('https://www.google.com/maps','_blank')">
+                        Lihat Lokasi
                     </button>
-                </a>
+                </div>
+
+                <!-- RESEPSI -->
+                <div class="event-card">
+                    <h2 class="reveal-line">Akad</h2>
+                    <p class="reveal-line">Sabtu, 12 Oktober 2024</p>
+                    <p class="reveal-line">Pukul: 09:00</p>
+                    <p class="reveal-line">Kediaman Mempelai Wanita</p>
+                    <p class="reveal-line">
+                        Jl. Pangkalan 2 No.230, RT.004/RW.002, Cikiwul, Kec. Bantar Gebang, Kota Bks, Jawa Barat 17152
+                    </p>
+                    <button class="reveal-line" onclick="window.open('https://www.google.com/maps','_blank')">
+                        Lihat Lokasi
+                    </button>
+                </div>
+
             </div>
+        </section>
 
-            <!-- BINGKAI UTAMA SAMBUTAN -->
-            <section class="bingkai-sambutan">
-                <div class="container-bingkai">
+        <section class="love-story" id="loveStory">
+            <h2>Love Story</h2>
 
-                    <!-- FOTO PENGANTIN -->
-                    <div class="hero-photo-section">
-                        <img src="Remove-bg.ai_1725937187318.png" alt="Foto Pengantin" class="hero-photo">
-                    </div>
+            <div class="timeline" id="timeline">
+                <div class="timeline-line"></div>
 
-                    <!-- SAMBUTAN 1 -->
-                    <div class="sambutan-1">
-
-                        <h2>
-                            <p><i>Assalamu'alaikum warahmatullahi wabarakatuh</i></p>
-                            Dan di antara tanda-tanda (kebesaran)-Nya ialah
-                            Dia menciptakan pasangan-pasangan untukmu dari
-                            jenismu sendiri, agar kamu cenderung dan merasa
-                            tenteram kepadanya, dan Dia menjadikan diantaramu
-                            rasa kasih dan sayang. (Ar-Rum Ayat 21)
-                        </h2>
-                    </div>
-
-                    <!-- SAMBUTAN 2 -->
-                    <div class="sambutan">
-                        <p>
-                            Tanpa mengurangi rasa hormat, kami mengundang
-                            <strong id="namaTamu">Bapak/Ibu/Saudara/i</strong>
-                            untuk menghadiri acara pernikahan kami.
+                <div class="timeline-item">
+                    <div class="timeline-marker">❤️</div>
+                    <div class="timeline-content">
+                        <img src="beladandeni2.webp">
+                        <h3>Awal Pertemuan</h3>
+                        <p>Kami bertemu dan berkenalan pada tahun 2019 di sebuah cafe di kota bogor.
+                            di perkenalkan oleh salah satu teman kami. Singkat cerita kami saling komunikasi,
+                            namun takdir sempat memisahkan kami tetapi takdir pula yang menyatukan kami
+                            kembali..
                         </p>
                     </div>
-
                 </div>
-            </section>
 
-            <!-- PENGANTIN -->
-            <section class="pengantin">
-                <div class="couple">
-
-                    <div class="card">
-                        <img src="beladandeni1.webp" alt="Bella">
-                        <h3>Bella Pratama</h3>
-                        <p>Putra dari Bpk Ahmad & Ibu Siti</p>
-
-                        <!-- IG -->
-                        <div class="ig-single">
-                            <a href="https://instagram.com/bella" target="_blank">
-                                <img src="logoig2.png" alt="Instagram Bella">
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="card">
-                        <img src="beladandeni.webp" alt="Deni">
-                        <h3>Deni Maharani</h3>
-                        <p>Putri dari Bpk Budi & Ibu Aminah</p>
-
-                        <!-- IG -->
-                        <div class="ig-single">
-                            <a href="https://instagram.com/bella" target="_blank">
-                                <img src="logoig2.png" alt="Instagram Bella">
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- HALAMAN BARU -->
-            <!-- HALAMAN BARU: AKAD & RESEPSI -->
-            <section class="halaman-baru">
-                <div class="container">
-
-                    <!-- AKAD -->
-                    <div class="event-wrapper">
-                        <div class="event-card">
-                            <h2>Akad</h2>
-                            <p>Sabtu, 12 Oktober 2024</p>
-                            <p>Pukul: 09:00</p>
-                            <p>Kediaman Mempelai Wanita</p>
-                            <p>Jl. Pangkalan 2 No.230, RT.004/RW.002, Cikiwul, Kec. Bantar Gebang, Kota Bks, Jawa
-                                Barat
-                                17152</p>
-                            <button onclick="window.open('https://www.google.com/maps','_blank')">Lihat
-                                Lokasi</button>
-                        </div>
-                    </div>
-
-                    <!-- RESEPSI -->
-                    <div class="event-wrapper">
-                        <div class="event-card">
-                            <h2>Resepsi</h2>
-                            <p>Sabtu, 12 Oktober 2024</p>
-                            <p>Pukul: 12:00</p>
-                            <p>Kediaman Mempelai Wanita</p>
-                            <p>Jl. Pangkalan 2 No.230, RT.004/RW.002, Cikiwul, Kec. Bantar Gebang, Kota Bks, Jawa
-                                Barat
-                                17152</p>
-                            <button onclick="window.open('https://www.google.com/maps','_blank')">Lihat
-                                Lokasi</button>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="love-story" id="loveStory">
-                <h2>Love Story</h2>
-
-                <div class="timeline" id="timeline">
-                    <div class="timeline-line"></div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">❤️</div>
-                        <div class="timeline-content">
-                            <img src="beladandeni2.webp">
-                            <h3>Awal Pertemuan</h3>
-                            <p>Kami bertemu dan berkenalan pada tahun 2019 di sebuah cafe di kota bogor.
-                                di perkenalkan oleh salah satu teman kami. Singkat cerita kami saling komunikasi,
-                                namun takdir sempat memisahkan kami tetapi takdir pula yang menyatukan kami
-                                kembali..
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker">❤️</div>
-                        <div class="timeline-content">
-                            <img src="beladandeni.webp">
-                            <h3>Lamaran</h3>
-                            <p>Sampai akhirnya kami kembali dan saling menyakinkan, 31 desember 2023 kami memutuskan
-                                mengikat hubungan yang disaksikan oleh dua keluarga besar.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-marker last-marker">❤️</div>
-                        <div class="timeline-content">
-                            <img src="beladandeni1.webp">
-                            <h3>Menikah</h3>
-                            <p>Tepat 10bulan setelah lamaran, kami memutuskan untuk mangarungi bahtera rumah tangga
-                                pernikahan yang suci yang insyaAllah penuh keberkahan sakinah mawaddah & warahmah.
-                                Tibalah pada titik sakral dalam hubungan asmara kami. Atas izin dan ridho Allah,
-                                kami yakin dengan segenap hati dan rasa saling menyayangi, untuk memulai perjalanan,
-                                membangun kebahagiaan, menciptakan keharmonisan dalam satu atap yang dimulai pada 12
-                                oktober 2024. Pilihan yang telah kami tetapkan semoga menjadi suatu anugerah
-                                terindah dan keberkahan dalam hidup kami. Amin Ya Rabbal Alamin Dan kami percaya
-                                “Apa yang menjadi takdirmu akan mencari jalannya menemukannya” ali bin abi thalib
-                            </p>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">❤️</div>
+                    <div class="timeline-content">
+                        <img src="beladandeni.webp">
+                        <h3>Lamaran</h3>
+                        <p>Sampai akhirnya kami kembali dan saling menyakinkan, 31 desember 2023 kami memutuskan
+                            mengikat hubungan yang disaksikan oleh dua keluarga besar.</p>
                     </div>
                 </div>
-            </section>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker last-marker">❤️</div>
+                    <div class="timeline-content">
+                        <img src="beladandeni1.webp">
+                        <h3>Menikah</h3>
+                        <p>Tepat 10bulan setelah lamaran, kami memutuskan untuk mangarungi bahtera rumah tangga
+                            pernikahan yang suci yang insyaAllah penuh keberkahan sakinah mawaddah & warahmah.
+                            Tibalah pada titik sakral dalam hubungan asmara kami.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
-            <!-- ===================== 
+        <!-- ===================== 
    OUR GALLERY
 ===================== -->
-            <section class="gallery-section" id="gallery">
-                <h2 class="gallery-title">Our Gallery</h2>
+        <section class="gallery-section" id="gallery">
+            <h2 class="gallery-title">Our Gallery</h2>
 
-                <!-- SLIDER -->
-                <div class="gallery-slider">
-                    <img src="beladandeni.webp" class="slide active">
-                    <img src="beladandeni1.webp" class="slide">
-                    <img src="beladandeni2.webp" class="slide">
-                </div>
-
-                <!-- GRID GALERI -->
-                <div class="gallery-grid">
-                    <img src="beladandeni3.webp" onclick="openLightbox(0)">
-                    <img src="beladandeni4.webp" onclick="openLightbox(1)">
-                    <img src="aul.jpeg" onclick="openLightbox(2)">
-                    <img src="aulia.jpeg" onclick="openLightbox(3)">
-                    <img src="ajidanlia.jpeg" onclick="openLightbox(4)">
-                    <img src="beladandeni.webp" onclick="openLightbox(5)">
-                </div>
-            </section>
-
-            <!-- LIGHTBOX -->
-            <div class="lightbox" id="lightbox">
-                <div class="counter" id="counter">1 / 6</div>
-
-                <!-- TOP RIGHT MENU -->
-                <div class="lightbox-controls">
-                    <button onclick="zoomImage()">🔍</button>
-                    <button onclick="toggleShare()">⤴</button>
-                    <button onclick="closeLightbox()">✕</button>
-
-                    <div class="share-menu" id="shareMenu">
-                        <img src="logo.ig.png" onclick="share('ig')">
-                        <img src="logo.fb.png" onclick="share('fb')">
-                        <img src="logo.wa.png" onclick="share('wa')">
-                    </div>
-                </div>
-
-                <button class="nav left" onclick="changeSlide(-1)">‹</button>
-                <img id="lightbox-img" onclick="resetZoom()">
-                <button class="nav right" onclick="changeSlide(1)">›</button>
+            <!-- SLIDER -->
+            <div class="gallery-slider">
+                <img src="beladandeni.webp" class="slide active">
+                <img src="beladandeni1.webp" class="slide">
+                <img src="beladandeni2.webp" class="slide">
             </div>
 
-            <!-- Tombol GIFS -->
-            <!-- GIFS UNDANGAN -->
-            <section class="wedding-gifts">
-                <div class="gifts-box">
-                    <h2>Wedding Gifts</h2>
+            <!-- GRID GALERI -->
+            <div class="gallery-grid">
+                <img src="beladandeni3.webp" onclick="openLightbox(0)">
+                <img src="beladandeni4.webp" onclick="openLightbox(1)">
+                <img src="aul.jpeg" onclick="openLightbox(2)">
+                <img src="aulia.jpeg" onclick="openLightbox(3)">
+                <img src="ajidanlia.jpeg" onclick="openLightbox(4)">
+                <img src="beladandeni.webp" onclick="openLightbox(5)">
+            </div>
+        </section>
 
-                    <p class="gifts-text">
-                        Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
-                        Dan jika memberi adalah ungkapan tanda kasih Anda,
-                        Anda dapat memberi kado secara cashless.
-                    </p>
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <div class="counter" id="counter">1 / 6</div>
 
-                    <!-- Tombol -->
-                    <div class="gifts-actions">
-                        <a href="#info-kirim" class="gift-btn" id="btn-gift">
-                            <span class="icon">🎁</span>
-                            Lihat Info Pengiriman
-                        </a>
-                        <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="gift-btn">
-                            <span class="icon">💬</span>
-                            WhatsApp Konfirmasi
-                        </a>
-                    </div>
+            <!-- TOP RIGHT MENU -->
+            <div class="lightbox-controls">
+                <button onclick="zoomImage()">🔍</button>
+                <button onclick="toggleShare()">⤴</button>
+                <button onclick="closeLightbox()">✕</button>
 
-                    <!-- Section Info Pengirim -->
-                    <section id="info-kirim" class="gift-info">
-                        <h3>Info Pengiriman</h3>
-
-                        <!-- ALAMAT -->
-                        <div class="address-box">
-                            <strong>Bella Saputri</strong>
-                            <p>
-                                Jl. Pangkalan 2 No.230, RT.004/RW.002,<br>
-                                Cikiwul, Kec. Bantar Gebang,<br>
-                                Kota Bks, Jawa Barat 17152
-                            </p>
-                            <div class="copy-line">
-                                <span>📱 6285173353354</span>
-                                <button onclick="copyWa('6285173353354')">📋 Salin</button>
-                            </div>
-                        </div>
-
-                        <!-- BCA -->
-                        <div class="bank-card">
-                            <img src="bca.png" class="bank-photo" alt="BCA">
-                            <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
-
-                            <div class="bank-info">
-                                <div class="bank-name">Bella Saputri</div>
-                                <div class="bank-number">5680 6286 65</div>
-                            </div>
-
-                            <!-- Tombol salin elegan -->
-                            <button class="copy-btn" onclick="copyText('5680628665')" title="Salin Nomor">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- BRI -->
-                        <div class="bank-card">
-                            <img src="Logo-bni.png" class="bank-photo" alt="BRI">
-                            <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
-
-                            <div class="bank-info">
-                                <div class="bank-name">Bella Saputri</div>
-                                <div class="bank-number">1234 5678 9012</div>
-                            </div>
-
-                            <button class="copy-btn" onclick="copyText('123456789012')" title="Salin Nomor">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Mandiri -->
-                        <div class="bank-card">
-                            <img src="Logo-BRI.png" class="bank-photo" alt="Mandiri">
-                            <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
-
-                            <div class="bank-info">
-                                <div class="bank-name">Bella Saputri</div>
-                                <div class="bank-number">1267 4554 330</div>
-                            </div>
-
-                            <button class="copy-btn" onclick="copyText('12674554330')" title="Salin Nomor">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
-                                </svg>
-                            </button>
-                        </div>
-
-                    </section>
+                <div class="share-menu" id="shareMenu">
+                    <img src="logo.ig.png" onclick="share('ig')">
+                    <img src="logo.fb.png" onclick="share('fb')">
+                    <img src="logo.wa.png" onclick="share('wa')">
                 </div>
-            </section>
+            </div>
 
-            <!-- RSVP -->
-            <!-- RSVP --><!-- RSVP --><!-- RSVP --><!-- RSVP --><!-- RSVP -->
-            <section class="rsvp-section">
+            <button class="nav left" onclick="changeSlide(-1)">‹</button>
+            <img id="lightbox-img" onclick="resetZoom()">
+            <button class="nav right" onclick="changeSlide(1)">›</button>
+        </div>
 
-                <div class="RSVP">
-                    <h2>Wedding Gifts</h2>
+        <!-- Tombol GIFS -->
+        <!-- GIFS UNDANGAN -->
+        <section class="wedding-gifts">
+            <div class="gifts-box">
+                <h2>Wedding Gifts</h2>
 
-                    <div class="wish-trigger">
-                        <button id="wishBtn">💌</button>
-                    </div>
+                <p class="gifts-text">
+                    Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
+                    Dan jika memberi adalah ungkapan tanda kasih Anda,
+                    Anda dapat memberi kado secara cashless.
+                </p>
 
-                    <form id="rsvpForm" class="rsvp-form hidden">
-
-                        <div class="field">
-                            <input type="text" id="guestName" placeholder="Nama">
-                        </div>
-
-                        <!-- KONFIRMASI -->
-                        <div class="field">
-                            <div class="dropdown-header" id="attendanceHeader">
-                                <span id="attendanceText">Konfirmasi Kehadiran</span>
-                            </div>
-
-                            <div class="dropdown-body hidden" id="attendanceOptions">
-                                <div class="radio" data-value="Hadir">Hadir</div>
-                                <div class="radio" data-value="Tidak Hadir">Tidak Hadir</div>
-
-                                <!-- JUMLAH ORANG -->
-                                <div class="guest-count hidden" id="guestCount">
-                                    <div class="count" data-count="1">1 Orang</div>
-                                    <div class="count" data-count="2">2 Orang</div>
-                                    <div class="count" data-count="3">3 Orang</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <textarea id="message" placeholder="Tulis ucapan..."></textarea>
-                            <small><span id="wordCount">0</span>/500</small>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Kirim</button>
-
-                        <!-- HASIL UCAPAN -->
-                        <div class="wish-list-container hidden"></div>
-
-                    </form>
-            </section>
-
-
-            <!-- PENUTUP--> <!-- PENUTUP -->
-
-            <!-- SECTION PENUTUP -->
-            <section id="closing">
-                <div class="closing-overlay"></div>
-
-                <div class="closing-content">
-                    <!-- Bingkai Foto -->
-                    <div class="photo-frame">
-                        <img src="beladandeni3.webp" alt="Foto Pengantin">
-                    </div>
-
-                    <!-- Teks Penutup -->
-                    <h2>Terima Kasih</h2>
-                    <p>
-                        Merupakan suatu kehormatan dan kebahagiaan bagi kami
-                        apabila Bapak/Ibu/Saudara/i berkenan hadir dan
-                        memberikan doa restu.
-                    </p>
-
-                    <h3>Bella & Deni</h3>
+                <!-- Tombol -->
+                <div class="gifts-actions">
+                    <a href="#info-kirim" class="gift-btn" id="btn-gift">
+                        <span class="icon">🎁</span>
+                        Lihat Info Pengiriman
+                    </a>
+                    <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="gift-btn">
+                        <span class="icon">💬</span>
+                        WhatsApp Konfirmasi
+                    </a>
                 </div>
-            </section>
+
+                <!-- Section Info Pengirim -->
+                <section id="info-kirim" class="gift-info">
+                    <h3>Info Pengiriman</h3>
+
+                    <!-- ALAMAT -->
+                    <div class="address-box">
+                        <strong>Bella Saputri</strong>
+                        <p>
+                            Jl. Pangkalan 2 No.230, RT.004/RW.002,<br>
+                            Cikiwul, Kec. Bantar Gebang,<br>
+                            Kota Bks, Jawa Barat 17152
+                        </p>
+                        <div class="copy-line">
+                            <span>📱 6285173353354</span>
+                            <button onclick="copyWa('6285173353354')">📋 Salin</button>
+                        </div>
+                    </div>
+
+                    <!-- BCA -->
+                    <div class="bank-card">
+                        <img src="bca.png" class="bank-photo" alt="BCA">
+                        <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
+
+                        <div class="bank-info">
+                            <div class="bank-name">Bella Saputri</div>
+                            <div class="bank-number">5680 6286 65</div>
+                        </div>
+
+                        <!-- Tombol salin elegan -->
+                        <button class="copy-btn" onclick="copyText('5680628665')" title="Salin Nomor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
+                                viewBox="0 0 24 24">
+                                <path d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- BRI -->
+                    <div class="bank-card">
+                        <img src="Logo-bni.png" class="bank-photo" alt="BRI">
+                        <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
+
+                        <div class="bank-info">
+                            <div class="bank-name">Bella Saputri</div>
+                            <div class="bank-number">1234 5678 9012</div>
+                        </div>
+
+                        <button class="copy-btn" onclick="copyText('123456789012')" title="Salin Nomor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
+                                viewBox="0 0 24 24">
+                                <path d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Mandiri -->
+                    <div class="bank-card">
+                        <img src="Logo-BRI.png" class="bank-photo" alt="Mandiri">
+                        <img src="chip-atm-undangan.png" class="bank-chip" alt="Chip ATM">
+
+                        <div class="bank-info">
+                            <div class="bank-name">Bella Saputri</div>
+                            <div class="bank-number">1267 4554 330</div>
+                        </div>
+
+                        <button class="copy-btn" onclick="copyText('12674554330')" title="Salin Nomor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
+                                viewBox="0 0 24 24">
+                                <path d="M19 21H9c-1.1 0-2-.9-2-2V7h2v12h10v2zm2-16H7c-1.1 0-2 .9-2 2v12h2V7h14V3z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <!-- RSVP --><!-- RSVP --><!-- RSVP --><!-- RSVP --><!-- RSVP -->
+        <section class="rsvp-section">
+
+            <div class="RSVP">
+                <h2>Ucapan & RSVP</h2>
+
+                <div class="wish-trigger">
+                    <button id="wishBtn">💌</button>
+                </div>
+
+                <form id="rsvpForm" class="rsvp-form hidden">
+
+                    <div class="field">
+                        <input type="text" id="guestName" placeholder="Nama">
+                    </div>
+
+                    <!-- KONFIRMASI -->
+                    <div class="field">
+                        <div class="dropdown-header" id="attendanceHeader">
+                            <span id="attendanceText">Konfirmasi Kehadiran</span>
+                        </div>
+
+                        <div class="dropdown-body hidden" id="attendanceOptions">
+                            <div class="radio" data-value="Hadir">Hadir</div>
+                            <div class="radio" data-value="Tidak Hadir">Tidak Hadir</div>
+
+                            <!-- JUMLAH ORANG -->
+                            <div class="guest-count hidden" id="guestCount">
+                                <div class="count" data-count="1">1 Orang</div>
+                                <div class="count" data-count="2">2 Orang</div>
+                                <div class="count" data-count="3">3 Orang</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <textarea id="message" placeholder="Tulis ucapan..."></textarea>
+                        <small><span id="wordCount">0</span>/500</small>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Kirim</button>
+
+                    <!-- HASIL UCAPAN -->
+                    <div class="wish-list-container hidden"></div>
+
+                </form>
+        </section>
+
+
+        <!-- PENUTUP--> <!-- PENUTUP -->
+
+        <!-- SECTION PENUTUP -->
+        <section id="closing">
+            <div class="closing-overlay"></div>
+
+            <div class="closing-content">
+                <!-- Bingkai Foto -->
+                <div class="photo-frame">
+                    <img src="beladandeni3.webp" alt="Foto Pengantin">
+                </div>
+
+                <!-- Teks Penutup -->
+                <h2>Terima Kasih</h2>
+                <p>
+                    Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                    apabila Bapak/Ibu/Saudara/i berkenan hadir dan
+                    memberikan doa restu.
+                </p>
+
+                <h3>Bella & Deni</h3>
+            </div>
+        </section>
 
     </main>
 
@@ -523,6 +530,9 @@
 
     <!-- JS -->
     <script src="script.js"></script>
+    <script src="hero-premium.js"></script>
+
+
 
 </body>
 
